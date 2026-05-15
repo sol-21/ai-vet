@@ -1,0 +1,1 @@
+{"version":3,"file":"security.d.ts","sourceRoot":"","sources":["../../src/analyzers/security.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,KAAK,EAAE,MAAM,mBAAmB,CAAC;AAG/C,wBAAsB,eAAe,CACnC,QAAQ,EAAE,MAAM,EAChB,OAAO,EAAE,MAAM,EACf,IAAI,EAAE,GAAG,GACR,OAAO,CAAC,KAAK,EAAE,CAAC,CAwBlB"}

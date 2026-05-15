@@ -1,0 +1,1 @@
+{"version":3,"file":"missing-await.d.ts","sourceRoot":"","sources":["../../src/analyzers/missing-await.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,KAAK,EAAE,MAAM,mBAAmB,CAAC;AAO/C,wBAAsB,mBAAmB,CACvC,QAAQ,EAAE,MAAM,EAChB,QAAQ,EAAE,MAAM,EAChB,GAAG,EAAE,GAAG,GACP,OAAO,CAAC,KAAK,EAAE,CAAC,CAmDlB"}

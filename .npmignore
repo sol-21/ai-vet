@@ -1,0 +1,8 @@
+src/
+test/
+tsconfig.json
+tsconfig.build.json
+GEMINI.md
+MEMORY.md
+*.md
+!README.md

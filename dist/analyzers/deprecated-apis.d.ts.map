@@ -1,0 +1,1 @@
+{"version":3,"file":"deprecated-apis.d.ts","sourceRoot":"","sources":["../../src/analyzers/deprecated-apis.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,KAAK,EAAE,MAAM,mBAAmB,CAAC;AAG/C,wBAAsB,qBAAqB,CACzC,QAAQ,EAAE,MAAM,EAChB,OAAO,EAAE,MAAM,EACf,IAAI,EAAE,GAAG,GACR,OAAO,CAAC,KAAK,EAAE,CAAC,CAkBlB"}

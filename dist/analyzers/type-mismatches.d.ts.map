@@ -1,0 +1,1 @@
+{"version":3,"file":"type-mismatches.d.ts","sourceRoot":"","sources":["../../src/analyzers/type-mismatches.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,KAAK,EAAE,MAAM,mBAAmB,CAAC;AAE/C,wBAAsB,qBAAqB,CACzC,SAAS,EAAE,MAAM,EACjB,QAAQ,EAAE,MAAM,EAChB,IAAI,EAAE,GAAG,GACR,OAAO,CAAC,KAAK,EAAE,CAAC,CAGlB"}

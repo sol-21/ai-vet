@@ -1,0 +1,1 @@
+{"version":3,"file":"hallucination-rules.d.ts","sourceRoot":"","sources":["../../src/rules/hallucination-rules.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,iBAAiB;IAChC,IAAI,EAAE,MAAM,CAAC;IACb,OAAO,EAAE,MAAM,CAAC;IAChB,UAAU,EAAE,MAAM,CAAC;IACnB,UAAU,CAAC,EAAE,MAAM,CAAC;IACpB,WAAW,CAAC,EAAE,MAAM,CAAC;CACtB;AAED,eAAO,MAAM,mBAAmB,EAAE,iBAAiB,EAsBlD,CAAC"}

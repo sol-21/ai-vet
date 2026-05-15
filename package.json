@@ -1,0 +1,67 @@
+{
+  "name": "ai-vet",
+  "version": "1.0.0",
+  "description": "Audit AI-generated code for bugs, security issues, and hallucinations",
+  "keywords": [
+    "ai",
+    "audit",
+    "cli",
+    "security",
+    "typescript",
+    "linter"
+  ],
+  "author": "Solomon",
+  "license": "MIT",
+  "homepage": "https://github.com/sol-21/ai-vet#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sol-21/ai-vet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sol-21/ai-vet/issues"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "ai-vet": "./dist/bin/ai-audit.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json && chmod +x dist/bin/ai-audit.js",
+    "build:watch": "tsc -p tsconfig.build.json --watch",
+    "dev": "tsx src/bin/ai-audit.ts",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build && npm run test:run"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@babel/parser": "^7.24.0",
+    "@babel/traverse": "^7.24.0",
+    "@babel/types": "^7.24.0",
+    "chalk": "^5.3.0",
+    "commander": "^13.0.0",
+    "cosmiconfig": "^9.0.0",
+    "glob": "^13.0.0",
+    "inquirer": "^12.0.0",
+    "ora": "^9.0.0",
+    "ts-morph": "^25.0.0"
+  },
+  "devDependencies": {
+    "@types/babel__traverse": "^7.20.0",
+    "@types/inquirer": "^9.0.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.2.14",
+    "tsx": "^4.7.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}
