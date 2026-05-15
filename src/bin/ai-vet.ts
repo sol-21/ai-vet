@@ -41,7 +41,7 @@ program
 
 program
   .command('init')
-  .description('Initialize ai-audit configuration')
+  .description('Initialize ai-vet configuration')
   .option('--yes', 'Use default configuration')
   .action(initCommand);
 

@@ -1,6 +1,6 @@
 {
   "name": "ai-vet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Audit AI-generated code for bugs, security issues, and hallucinations",
   "keywords": [
     "ai",
