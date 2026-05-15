@@ -23,7 +23,7 @@ export const SECURITY_RULES = [
         message: 'Detected potentially hardcoded API key or secret.',
         severity: 'CRITICAL',
         suggestion: 'Move secrets to environment variables or a secure vault.',
-        exampleBad: 'const apiKey = "sk_live_" + "123456789012345678901234";',
+        exampleBad: 'const apiKey = "sk_live_123456789012345678901234";',
         exampleGood: 'const apiKey = process.env.API_KEY;',
     },
 ];

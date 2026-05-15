@@ -24,15 +24,15 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "ai-vet": "./dist/bin/ai-audit.js"
+    "ai-vet": "./dist/bin/ai-vet.js"
   },
   "engines": {
     "node": ">=18.0.0"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.build.json && chmod +x dist/bin/ai-audit.js",
+    "build": "tsc -p tsconfig.build.json && chmod +x dist/bin/ai-vet.js",
     "build:watch": "tsc -p tsconfig.build.json --watch",
-    "dev": "tsx src/bin/ai-audit.ts",
+    "dev": "tsx src/bin/ai-vet.ts",
     "test": "vitest",
     "test:run": "vitest run",
     "typecheck": "tsc --noEmit",

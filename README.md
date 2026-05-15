@@ -15,12 +15,13 @@
 AI code generators are powerful but prone to "hallucinating" APIs or omitting essential security patterns. `ai-vet` provides a safety net by vetting generated code against a set of rules tailored specifically to common AI failure modes.
 
 **Problem (AI Generated Code):**
+
 ```ts
-import { useAsyncEffect } from 'react'; // Hallucination: hook does not exist
-import { magicHelper } from 'lodash';    // Phantom Import: package/export does not exist
+import { useAsyncEffect } from "react"; // Hallucination: hook does not exist
+import { magicHelper } from "lodash"; // Phantom Import: package/export does not exist
 
 async function load() {
-  const data = fetchData();              // Missing Await: returns a promise
+  const data = fetchData(); // Missing Await: returns a promise
   console.log(data.name);
 }
 ```
@@ -33,16 +34,19 @@ async function load() {
 ### Installation
 
 **Execute via npx (Recommended):**
+
 ```bash
 npx ai-vet audit src/
 ```
 
 **Global Installation:**
+
 ```bash
 npm install -g ai-vet
 ```
 
 **Project Dependency:**
+
 ```bash
 npm install --save-dev ai-vet
 ```
@@ -69,27 +73,27 @@ ai-vet init --yes
 
 ### Command Reference
 
-| Command | Option | Description |
-| :--- | :--- | :--- |
-| **audit [path]** | `--json` | Export results as machine-readable JSON. |
-| | `--quiet` | Suppress info messages; show errors only. |
-| | `--fix` | Automatically resolve deterministic issues. |
-| **scan** | | Analyze all files defined in `.aiauditrc.json`. |
-| **explain <rule>**| | View detailed rule logic and code examples. |
-| **init** | `--yes` | Generate a default configuration file. |
+| Command            | Option    | Description                                     |
+| :----------------- | :-------- | :---------------------------------------------- |
+| **audit [path]**   | `--json`  | Export results as machine-readable JSON.        |
+|                    | `--quiet` | Suppress info messages; show errors only.       |
+|                    | `--fix`   | Automatically resolve deterministic issues.     |
+| **scan**           |           | Analyze all files defined in `.aiauditrc.json`. |
+| **explain <rule>** |           | View detailed rule logic and code examples.     |
+| **init**           | `--yes`   | Generate a default configuration file.          |
 
 ---
 
 ### Core Analyzers
 
-*   **Phantom Imports**: Identifies imports of non-existent packages or local files.
-*   **Missing Await**: Detects unawaited Promises and asynchronous function calls.
-*   **Security Audit**: Scans for `eval()`, `innerHTML`, and hardcoded secrets.
-*   **Error Handling**: Validates `fetch` implementation and exception wrapping.
-*   **Deprecated APIs**: Flags outdated Node.js and browser interfaces.
-*   **Dead Code**: Finds unused variables, unreachable logic, and empty imports.
-*   **Type Mismatches**: Identifies obvious type conflicts in JS and TS.
-*   **Hallucinations**: Catches invented methods and non-existent framework hooks.
+- **Phantom Imports**: Identifies imports of non-existent packages or local files.
+- **Missing Await**: Detects unawaited Promises and asynchronous function calls.
+- **Security Audit**: Scans for `eval()`, `innerHTML`, and hardcoded secrets.
+- **Error Handling**: Validates `fetch` implementation and exception wrapping.
+- **Deprecated APIs**: Flags outdated Node.js and browser interfaces.
+- **Dead Code**: Finds unused variables, unreachable logic, and empty imports.
+- **Type Mismatches**: Identifies obvious type conflicts in JS and TS.
+- **Hallucinations**: Catches invented methods and non-existent framework hooks.
 
 ---
 
@@ -127,7 +131,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
       - run: npm install
       - run: npx ai-vet scan
 ```
@@ -136,12 +140,12 @@ jobs:
 
 ### Exit Codes
 
-| Code | Status |
-| :--- | :--- |
-| **0** | Clean: No issues detected. |
+| Code  | Status                                       |
+| :---- | :------------------------------------------- |
+| **0** | Clean: No issues detected.                   |
 | **1** | Issues found at or above severity threshold. |
-| **2** | Configuration or CLI argument error. |
-| **3** | Parse error: File could not be analyzed. |
+| **2** | Configuration or CLI argument error.         |
+| **3** | Parse error: File could not be analyzed.     |
 
 ---
 
@@ -150,11 +154,11 @@ jobs:
 The analyzers can be integrated directly into custom tooling:
 
 ```ts
-import { analyzeSecurity, parseFile } from 'ai-vet';
+import { analyzeSecurity, parseFile } from "ai-vet";
 
-const filePath = 'src/index.ts';
+const filePath = "src/index.ts";
 const { ast } = await parseFile(filePath);
-const content = await fs.readFile(filePath, 'utf-8');
+const content = await fs.readFile(filePath, "utf-8");
 
 const issues = await analyzeSecurity(filePath, content, ast);
 console.log(issues);
@@ -170,4 +174,4 @@ Technical contributions are welcome. Please review the project structure and exi
 
 ### License
 
-MIT © 2026
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
