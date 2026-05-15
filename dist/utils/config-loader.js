@@ -1,5 +1,5 @@
 import { cosmiconfig } from 'cosmiconfig';
-const MODULE_NAME = 'aiaudit';
+const MODULE_NAME = 'aivet';
 const DEFAULT_CONFIG = {
     include: ['src/**/*.{js,ts,jsx,tsx}'],
     exclude: ['**/*.test.ts', 'node_modules', 'dist'],

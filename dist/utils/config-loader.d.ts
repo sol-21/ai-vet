@@ -1,3 +1,3 @@
-import type { AiAuditConfig } from '../types/config.js';
-export declare function loadConfig(): Promise<AiAuditConfig>;
+import type { AiVetConfig } from '../types/config.js';
+export declare function loadConfig(): Promise<AiVetConfig>;
 //# sourceMappingURL=config-loader.d.ts.map

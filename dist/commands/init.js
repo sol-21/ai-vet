@@ -28,8 +28,8 @@ export async function initCommand(options) {
         severity: answers.severity,
         rules: {},
     };
-    await writeFile(path.join(process.cwd(), '.aiauditrc.json'), JSON.stringify(config, null, 2));
-    logger.success('.aiauditrc.json created successfully.');
+    await writeFile(path.join(process.cwd(), '.aivetrc.json'), JSON.stringify(config, null, 2));
+    logger.success('.aivetrc.json created successfully.');
 }
 async function writeDefaultConfig() {
     const config = {
@@ -37,7 +37,7 @@ async function writeDefaultConfig() {
         severity: 'HIGH',
         rules: {},
     };
-    await writeFile(path.join(process.cwd(), '.aiauditrc.json'), JSON.stringify(config, null, 2));
-    logger.success('.aiauditrc.json created successfully with defaults.');
+    await writeFile(path.join(process.cwd(), '.aivetrc.json'), JSON.stringify(config, null, 2));
+    logger.success('.aivetrc.json created successfully with defaults.');
 }
 //# sourceMappingURL=init.js.map

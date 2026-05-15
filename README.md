@@ -78,7 +78,7 @@ ai-vet init --yes
 | **audit [path]**   | `--json`  | Export results as machine-readable JSON.        |
 |                    | `--quiet` | Suppress info messages; show errors only.       |
 |                    | `--fix`   | Automatically resolve deterministic issues.     |
-| **scan**           |           | Analyze all files defined in `.aiauditrc.json`. |
+| **scan**           |           | Analyze all files defined in `.aivetrc.json`. |
 | **explain <rule>** |           | View detailed rule logic and code examples.     |
 | **init**           | `--yes`   | Generate a default configuration file.          |
 
@@ -99,7 +99,7 @@ ai-vet init --yes
 
 ### Configuration
 
-Customize the tool by creating a `.aiauditrc.json` in your project root:
+Customize the tool by creating a `.aivetrc.json` in your project root:
 
 ```json
 {

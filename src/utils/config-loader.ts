@@ -1,9 +1,9 @@
 import { cosmiconfig } from 'cosmiconfig';
-import type { AiAuditConfig } from '../types/config.js';
+import type { AiVetConfig } from '../types/config.js';
 
-const MODULE_NAME = 'aiaudit';
+const MODULE_NAME = 'aivet';
 
-const DEFAULT_CONFIG: AiAuditConfig = {
+const DEFAULT_CONFIG: AiVetConfig = {
   include: ['src/**/*.{js,ts,jsx,tsx}'],
   exclude: ['**/*.test.ts', 'node_modules', 'dist'],
   severity: 'HIGH',
@@ -23,7 +23,7 @@ const DEFAULT_CONFIG: AiAuditConfig = {
   gitDiff: false,
 };
 
-export async function loadConfig(): Promise<AiAuditConfig> {
+export async function loadConfig(): Promise<AiVetConfig> {
   const explorer = cosmiconfig(MODULE_NAME);
   const result = await explorer.search();
 

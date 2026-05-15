@@ -33,11 +33,11 @@ export async function initCommand(options: any) {
   };
 
   await writeFile(
-    path.join(process.cwd(), '.aiauditrc.json'),
+    path.join(process.cwd(), '.aivetrc.json'),
     JSON.stringify(config, null, 2)
   );
 
-  logger.success('.aiauditrc.json created successfully.');
+  logger.success('.aivetrc.json created successfully.');
 }
 
 async function writeDefaultConfig() {
@@ -47,8 +47,8 @@ async function writeDefaultConfig() {
     rules: {},
   };
   await writeFile(
-    path.join(process.cwd(), '.aiauditrc.json'),
+    path.join(process.cwd(), '.aivetrc.json'),
     JSON.stringify(config, null, 2)
   );
-  logger.success('.aiauditrc.json created successfully with defaults.');
+  logger.success('.aivetrc.json created successfully with defaults.');
 }

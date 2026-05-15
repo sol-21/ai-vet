@@ -1,5 +1,5 @@
 export type RuleSetting = 'error' | 'warn' | 'info' | 'off';
-export interface AiAuditConfig {
+export interface AiVetConfig {
     include: string[];
     exclude: string[];
     severity: 'CRITICAL' | 'HIGH' | 'MEDIUM' | 'LOW' | 'INFO';
